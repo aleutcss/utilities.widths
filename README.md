@@ -3,13 +3,11 @@
 The aleutcss `widths` module is a simple file of helper classes to drop widths
 onto elements such as grid systems.
 
-Install using Bower:
 
-    $ bower install --save inuit-widths
 
 Install using npm:
 
-    $ npm install --save inuit-widths
+    $ npm install --save-dev aleut-widths
 
 aleutcss’ widths classes are available in one of two formats. The default format
 is fraction-like, e.g.: `<div class="u-1/2">`.
