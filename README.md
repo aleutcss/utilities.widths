@@ -3,17 +3,28 @@
 The aleutcss `widths` module is a simple file of helper classes to drop widths
 onto elements such as grid systems.
 
+## Install using npm:
 
-
-Install using npm:
-
+```ssh
     $ npm install --save-dev aleut-widths
+```
 
-aleutcss’ widths classes are available in one of two formats. The default format
-is fraction-like, e.g.: `<div class="u-1/2">`.
+## Usage
+The width-classes are generated in sizes ranging from `u-1/1`, to `u-1/5`.
+By default aleut create wholes, halves, thirds, quarters, and fifths. You can override this
+by predefining the map `$widths-columns`. These classes are often used together with
+the layout-object.
 
-The other available format is spoken-word, e.g. `<div class="u-1-of-2">`.
-Enable this by predefining the `$inuit-use-fractions` feature switch, e.g.:
+example of usage
 
-    $inuit-use-fractions:    false;
-    @import "path/to/trumps.widths";
+```scss
+<div class="o-layout">
+	<div class="o-layout__item u-1/3">
+
+	</div><!--
+ --><div class="o-layout__item u-2/3">
+
+    </div>
+</div>
+
+```
