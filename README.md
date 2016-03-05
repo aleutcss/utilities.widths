@@ -11,8 +11,7 @@ onto elements such as grid systems.
 
 ## Usage
 The width-classes are generated in sizes ranging from `u-1/1`, to `u-1/5`.
-By default aleut create wholes, halves, thirds, quarters, and fifths. You can override this
-by predefining the map `$widths-columns`. These classes are often used together with
+ These classes are often used together with
 the layout-object.
 
 example of usage
@@ -27,4 +26,18 @@ example of usage
     </div>
 </div>
 
+```
+
+## Options
+By default aleut create wholes, halves, thirds, quarters, and fifths.
+You can override this by predefining the map `$widths-columns`.
+
+```scss
+$widths-columns: (
+    1,
+    2,
+    3,
+    4,
+    5,
+) !default;
 ```
